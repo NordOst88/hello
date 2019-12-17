@@ -8,5 +8,25 @@
 <body>
 	<h1>Прювээт!</h1>
 	<h2>Hello</h2>
+
+	<input id="inputId1" type="text" value="test value">
+	<input id="inputId2" type="text" value="">
+	<input id="inputId3" type="text" value="">
+	<br/>
+	<a href="#" onclick="push(event)">Переносим</a>
+	  
+	  <script>
+		let message;
+		message = 'Hello';
+
+         function push(e) {
+         e.preventDefault();
+         var val = document.getElementById("inputId1").value;
+         document.getElementById("inputId2").value = val;
+		 document.getElementById("inputId3").value = message;
+         return false;
+         }
+	  </script>
+
 </body>
 </html>
